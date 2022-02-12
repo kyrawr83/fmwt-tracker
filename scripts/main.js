@@ -34,6 +34,30 @@ function localStorageGetWithDefault(key, defaultValue) {
     return urlVal;
 }
 
+function getAcquiredScentCount() {
+    var scentSet = new Set();
+    $("img[data-name]").each(function() {
+        const name = $(this).attr('data-name');
+        if (!scentSet.has(name) && !$(this).hasClass("unselected")) {
+            scentSet.add(name);
+        }
+    });
+
+    return scentSet.size;
+}
+
+function getTotalScentCount() {
+    var scentSet = new Set();
+    $("img[data-name]").each(function() {
+        const name = $(this).attr('data-name');
+        if (!scentSet.has(name)) {
+            scentSet.add(name);
+        }
+    });
+
+    return scentSet.size;
+}
+
 $(document).ready(function(){
     getUrlVars();
 
@@ -64,6 +88,8 @@ $(document).ready(function(){
         } else {
             $(`img[data-name="${$(this).attr("data-name")}"]`).addClass("unselected");
         }
+
+        $('#total-completion h2').text(`${Math.trunc(getAcquiredScentCount() / getTotalScentCount() * 1000) / 10}%`);
     });
 
     // options menu

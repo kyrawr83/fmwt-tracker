@@ -1,5 +1,5 @@
 html, body {
-    background-color: #a35700;
+    background-color: #24759e;
     font-family: sans-serif;
     font-weight: bold;
     user-select: none;
@@ -52,8 +52,8 @@ h2 {
     padding-right: 0.25em;
 }
 
-.section {
-    background-color: rgba(0,0,0,0.25);
+#total-completion, .section {
+    background-color: #144e6c;
     width: 36em;
     margin: 5px 5px 5px 5px;
     padding: 0px 5px 5px 5px;
