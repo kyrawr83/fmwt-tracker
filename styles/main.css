@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-right: 0.25em;
 }
 
@@ -66,9 +66,11 @@ h2 {
     color: white;
 }
 
-img {
+.flex-row img {
     cursor: pointer;
     padding: 5px 5px 5px 5px;
+    -webkit-filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(0px 0px 5px white);
 }
 
 img.unselected {

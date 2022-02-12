@@ -47,7 +47,10 @@ $(document).ready(function(){
 
     // set text display for the main items
     $('.section img').on('mouseenter', function() {
-        $(`#${$(this).attr("data-area")} h2`).text($(this).attr('data-name'));
+        var modifier = $(this).attr('data-name-modifier');
+        if (modifier === undefined) modifier = "";
+        var fullname = `${$(this).attr('data-name')} ${modifier}`;
+        $(`#${$(this).attr("data-area")} h2`).text(fullname);
     });
 
     $('.section img').on('mouseleave', function() {
@@ -84,6 +87,18 @@ $(document).ready(function(){
         localStorage.setItem("basics-visible", isChecked);
     });
 
+    $("#fish-visible").click(function() {
+        var isChecked = $(this).is(':checked');
+        $(".fish-scents").toggle(isChecked);
+        localStorage.setItem("fish-visible", isChecked);
+    });
+
+    $("#insect-visible").click(function() {
+        var isChecked = $(this).is(':checked');
+        $(".insect-scents").toggle(isChecked);
+        localStorage.setItem("insect-visible", isChecked);
+    });
+
     $("#background-color").on("input", function() {
         var color = $(this).val();
         $("body, html").css("background-color", color);
@@ -100,6 +115,16 @@ $(document).ready(function(){
     var basic_scents_visible = localStorageGetWithDefault("basics-visible", true) == "true";
     if (!basic_scents_visible) {
         $("#basics-visible").click();
+    }
+
+    var fish_scents_visible = localStorageGetWithDefault("fish-visible", true) == "true";
+    if (!fish_scents_visible) {
+        $("#fish-visible").click();
+    }
+
+    var insect_scents_visible = localStorageGetWithDefault("insect-visible", true) == "true";
+    if (!insect_scents_visible) {
+        $("#insect-visible").click();
     }
 
     var bg_color = localStorageGetWithDefault("background-color", "#24759e");
