@@ -1,0 +1,398 @@
+<html>
+    <head>
+        <title>Dog Island 100% Tracker</title>
+        <meta name="description" content="Tracker for Dog Island 100% Speedruns">
+        <meta name="keywords" contents="Dog Island, 100%, Tracker, Wii, PS2">
+        <meta name="author" content="Phantom Games LLC.">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
+        <link rel="stylesheet" href="styles/main.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW6YPGQDM5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LW6YPGQDM5');
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="options-menu-toggle" class="hamburger">
+                <div class="hamburger-1"></div>
+                <div class="hamburger-2"></div>
+                <div class="hamburger-3"></div>
+            </div>
+        </header>
+
+        
+        <div class="flex-row">
+            <div class="flex-column">
+                <div id="green-meadows" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Green Meadows</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="green-meadows" data-name="Cabbage" class="unselected optional-item" src="images/scents/Cabbage.png"></td>
+                            <td><img data-area="green-meadows" data-name="Grape" class="unselected optional-item" src="images/scents/Grape.png"></td>
+                            <td><img data-area="green-meadows" data-name="Grapefruit" class="unselected optional-item" src="images/scents/Grapefruit.png"></td>
+                            <td><img data-area="green-meadows" data-name="Peony Flower" class="unselected optional-item" src="images/scents/PeonyFlower.png"></td>
+                            <td><img data-area="green-meadows" data-name="Tulip" class="unselected optional-item" src="images/scents/Tulip.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="treely-woods" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Treely Woods</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="treely-woods" data-name="Apple" class="unselected optional-item" src="images/scents/Apple.png"></td>
+                            <td><img data-area="treely-woods" data-name="Orange" class="unselected optional-item" src="images/scents/Orange.png"></td>
+                            <td><img data-area="treely-woods" data-name="Pumpkin" class="unselected optional-item" src="images/scents/Pumpkin.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="zoomy-lake" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Zoomy Lake</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="zoomy-lake" data-name="Green Apple" class="unselected optional-item" src="images/scents/GreenApple.png"></td>
+                            <td><img data-area="zoomy-lake" data-name="Lettuce" class="unselected optional-item" src="images/scents/Lettuce.png"></td>
+                            <td><img data-area="zoomy-lake" data-name="Watermelon" class="unselected optional-item" src="images/scents/Watermelon.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="hoya-plains" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Hoya Plains</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="hoya-plains" data-name="Cherry" class="unselected optional-item" src="images/scents/Cherry.png"></td>
+                            <td><img data-area="hoya-plains" data-name="Kiwi" class="unselected optional-item" src="images/scents/Kiwi.png"></td>
+                            <td><img data-area="hoya-plains" data-name="Spinach" class="unselected optional-item" src="images/scents/Spinach.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="south-desert" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>South Sandy Desert</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="south-desert" data-name="Banana" class="unselected optional-item" src="images/scents/Banana.png"></td>
+                            <td><img data-area="south-desert" data-name="Potato" class="unselected optional-item" src="images/scents/Potato.png"></td>
+                            <td><img data-area="south-desert" data-name="Sweet Potato" class="unselected optional-item" src="images/scents/SweetPotato.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="north-desert" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>North Sandy Desert</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="north-desert" data-name="Mango" class="unselected optional-item" src="images/scents/Mango.png"></td>
+                            <td><img data-area="north-desert" data-name="Passion Fruit" class="unselected optional-item" src="images/scents/PassionFruit.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="gola" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Gola Highlands</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="gola" data-name="Green Grape" class="unselected optional-item" src="images/scents/GreenGrape.png"></td>
+                            <td><img data-area="gola" data-name="Melon" class="unselected optional-item" src="images/scents/Melon.png"></td>
+                            <td><img data-area="gola" data-name="Tomato" class="unselected optional-item" src="images/scents/Tomato.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="chiro" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Chiro Caves</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="chiro" data-name="Cucumber" class="unselected optional-item" src="images/scents/Cucumber.png"></td>
+                            <td><img data-area="chiro" data-name="Fig" class="unselected optional-item" src="images/scents/Fig.png"></td>
+                            <td><img data-area="chiro" data-name="Pear" class="unselected optional-item" src="images/scents/Pear.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="west-chilly" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>West Chilly Fields</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="west-chilly" data-name="Apple Pear" class="unselected optional-item" src="images/scents/ApplePear.png"></td>
+                            <td><img data-area="west-chilly" data-name="Eggplant" class="unselected optional-item" src="images/scents/Eggplant.png"></td>
+                            <td><img data-area="west-chilly" data-name="Potato" class="unselected optional-item" src="images/scents/Potato.png"></td>
+                            <td><img data-area="west-chilly" data-name="Strawberry" class="unselected optional-item" src="images/scents/Strawberry.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="east-chilly" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>East Chilly Fields</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="east-chilly" data-name="Carrot" class="unselected optional-item" src="images/scents/Carrot.png"></td>
+                            <td><img data-area="east-chilly" data-name="Melon" class="unselected optional-item" src="images/scents/Melon.png"></td>
+                            <td><img data-area="east-chilly" data-name="Peach" class="unselected optional-item" src="images/scents/Peach.png"></td>
+                            <td><img data-area="east-chilly" data-name="Persimmon" class="unselected optional-item" src="images/scents/Persimmon.png"></td>
+                            <td><img data-area="east-chilly" data-name="Potato" class="unselected optional-item" src="images/scents/Potato.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="dry-valley" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Dry Valley</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="dry-valley" data-name="Blueberry" class="unselected optional-item" src="images/scents/Blueberry.png"></td>
+                            <td><img data-area="dry-valley" data-name="Papaya" class="unselected optional-item" src="images/scents/Papaya.png"></td>
+                            <td><img data-area="dry-valley" data-name="Pomegranate" class="unselected optional-item" src="images/scents/Pomegranate.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="rune-canyon" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Rune Canyon</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="rune-canyon" data-name="Blueberry" class="unselected optional-item" src="images/scents/Blueberry.png"></td>
+                            <td><img data-area="rune-canyon" data-name="Carrot" class="unselected optional-item" src="images/scents/Carrot.png"></td>
+                            <td><img data-area="rune-canyon" data-name="Chestnut" class="unselected optional-item" src="images/scents/Chestnut.png"></td>
+                            <td><img data-area="rune-canyon" data-name="Durian" class="unselected optional-item" src="images/scents/Durian.png"></td>
+                            <td><img data-area="rune-canyon" data-name="Pineapple" class="unselected optional-item" src="images/scents/Pineapple.png"></td>
+                            <td><img data-area="rune-canyon" data-name="Star Fruit" class="unselected optional-item" src="images/scents/StarFruit.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="rune-caverns" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Rune Caverns</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="rune-caverns" data-name="Apple Pear" class="unselected optional-item" src="images/scents/ApplePear.png"></td>
+                            <td><img data-area="rune-caverns" data-name="Lemon" class="unselected optional-item" src="images/scents/Lemon.png"></td>
+                            <td><img data-area="rune-caverns" data-name="Star Fruit" class="unselected optional-item" src="images/scents/StarFruit.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div id="kunka" class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Kunka Ruins</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img data-area="kunka" data-name="Apricot" class="unselected optional-item" src="images/scents/Apricot.png"></td>
+                            <td><img data-area="kunka" data-name="Litchee" class="unselected optional-item" src="images/scents/Litchee.png"></td>
+                            <td><img data-area="kunka" data-name="Mangosteen" class="unselected optional-item" src="images/scents/Mangosteen.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div class="section">
+                    <table width="100%">
+                        <tr style="height: 4em;">
+                            <td style="text-align: left; width: 60%;">
+                                <h1>Ancient Grove</h1>
+                            </td>
+                            <td style="text-align: right;">
+                                <h2></h2>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div class="info-block">
+                    <ul>
+                        <li>For suggestions and feature requests, please make issues on Github (link in the footer)!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="options-menu">
+            <table width="100%">
+                <tr>
+                    <td class="option-name">Background Color</td>
+                    <td class="option">
+                        <div>
+                            <input type="color" id="background-color" value="#24759e">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="option-name">Section Color</td>
+                    <td class="option">
+                        <div>
+                            <input type="color" id="section-color" value="#144e6c">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <footer style="padding-top: 1em; text-align: center;">
+            <a href="https://twitter.com/Phantom5800" target="_blank"><img width="15px" src="images/TwitterLogo.png"> @Phantom5800</a> &bull;
+            <a href="https://www.twitch.tv/phantom5800" target="_blank"><img width="15px" src="images/TwitchLogo.png"> Phantom5800</a> &bull;
+            <a href="https://github.com/Phantom5800/di100-tracker" target="_blank">Github</a> &bull;
+            DI100-Tracker &copy; <a href="https://phantom-games.com/" target="_blank">Phantom Games LLC. 2022</a>
+        </footer>
+</body>
+</html>
