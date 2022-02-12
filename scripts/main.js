@@ -78,6 +78,12 @@ $(document).ready(function(){
         $("#options-menu").toggleClass("options-open");
     });
 
+    $("#basics-visible").click(function() {
+        var isChecked = $(this).is(':checked');
+        $(".basic-scents").toggle(isChecked);
+        localStorage.setItem("basics-visible", isChecked);
+    });
+
     $("#background-color").on("input", function() {
         var color = $(this).val();
         $("body, html").css("background-color", color);
@@ -91,6 +97,11 @@ $(document).ready(function(){
     });
 
     // local storage settings
+    var basic_scents_visible = localStorageGetWithDefault("basics-visible", true) == "true";
+    if (!basic_scents_visible) {
+        $("#basics-visible").click();
+    }
+
     var bg_color = localStorageGetWithDefault("background-color", "#24759e");
     $("body, html").css("background-color", bg_color);
     $("#background-color").val(bg_color);

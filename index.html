@@ -19,10 +19,32 @@
     </head>
     <body>
         <header>
-            <div id="options-menu-toggle" class="hamburger">
-                <div class="hamburger-1"></div>
-                <div class="hamburger-2"></div>
-                <div class="hamburger-3"></div>
+            <div class="flex-row">
+                <div id="options-menu-toggle" class="hamburger">
+                    <div class="hamburger-1"></div>
+                    <div class="hamburger-2"></div>
+                    <div class="hamburger-3"></div>
+                </div>
+                <div id="section-visibility" class="flex-row">
+                    <div class="label">Basic Scents</div>
+                    <div class="checkbox-slider">
+                        <input class="checkbox-slider" id="basics-visible" type="checkbox" checked>
+                        <div class="checkbox-groove"></div>
+                        <label class="checkbox-slider" for="basics-visible"></label>
+                    </div>
+                    <div class="label">Fish</div>
+                    <div class="checkbox-slider">
+                        <input class="checkbox-slider" id="fish-visible" type="checkbox">
+                        <div class="checkbox-groove"></div>
+                        <label class="checkbox-slider" for="fish-visible"></label>
+                    </div>
+                    <div class="label">Insects</div>
+                    <div class="checkbox-slider">
+                        <input class="checkbox-slider" id="insect-visible" type="checkbox">
+                        <div class="checkbox-groove"></div>
+                        <label class="checkbox-slider" for="insect-visible"></label>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -41,7 +63,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="green-meadows" data-name="Cabbage" class="unselected optional-item" src="images/scents/Cabbage.png"></td>
                             <td><img data-area="green-meadows" data-name="Grape" class="unselected optional-item" src="images/scents/Grape.png"></td>
                             <td><img data-area="green-meadows" data-name="Grapefruit" class="unselected optional-item" src="images/scents/Grapefruit.png"></td>
@@ -65,7 +87,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="treely-woods" data-name="Apple" class="unselected optional-item" src="images/scents/Apple.png"></td>
                             <td><img data-area="treely-woods" data-name="Orange" class="unselected optional-item" src="images/scents/Orange.png"></td>
                             <td><img data-area="treely-woods" data-name="Pumpkin" class="unselected optional-item" src="images/scents/Pumpkin.png"></td>
@@ -87,7 +109,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="zoomy-lake" data-name="Green Apple" class="unselected optional-item" src="images/scents/GreenApple.png"></td>
                             <td><img data-area="zoomy-lake" data-name="Lettuce" class="unselected optional-item" src="images/scents/Lettuce.png"></td>
                             <td><img data-area="zoomy-lake" data-name="Watermelon" class="unselected optional-item" src="images/scents/Watermelon.png"></td>
@@ -109,7 +131,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="hoya-plains" data-name="Cherry" class="unselected optional-item" src="images/scents/Cherry.png"></td>
                             <td><img data-area="hoya-plains" data-name="Kiwi" class="unselected optional-item" src="images/scents/Kiwi.png"></td>
                             <td><img data-area="hoya-plains" data-name="Spinach" class="unselected optional-item" src="images/scents/Spinach.png"></td>
@@ -131,7 +153,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="south-desert" data-name="Banana" class="unselected optional-item" src="images/scents/Banana.png"></td>
                             <td><img data-area="south-desert" data-name="Potato" class="unselected optional-item" src="images/scents/Potato.png"></td>
                             <td><img data-area="south-desert" data-name="Sweet Potato" class="unselected optional-item" src="images/scents/SweetPotato.png"></td>
@@ -153,7 +175,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="north-desert" data-name="Mango" class="unselected optional-item" src="images/scents/Mango.png"></td>
                             <td><img data-area="north-desert" data-name="Passion Fruit" class="unselected optional-item" src="images/scents/PassionFruit.png"></td>
                         </tr>
@@ -174,7 +196,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="gola" data-name="Green Grape" class="unselected optional-item" src="images/scents/GreenGrape.png"></td>
                             <td><img data-area="gola" data-name="Melon" class="unselected optional-item" src="images/scents/Melon.png"></td>
                             <td><img data-area="gola" data-name="Tomato" class="unselected optional-item" src="images/scents/Tomato.png"></td>
@@ -196,7 +218,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="chiro" data-name="Cucumber" class="unselected optional-item" src="images/scents/Cucumber.png"></td>
                             <td><img data-area="chiro" data-name="Fig" class="unselected optional-item" src="images/scents/Fig.png"></td>
                             <td><img data-area="chiro" data-name="Pear" class="unselected optional-item" src="images/scents/Pear.png"></td>
@@ -218,7 +240,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="west-chilly" data-name="Apple Pear" class="unselected optional-item" src="images/scents/ApplePear.png"></td>
                             <td><img data-area="west-chilly" data-name="Eggplant" class="unselected optional-item" src="images/scents/Eggplant.png"></td>
                             <td><img data-area="west-chilly" data-name="Potato" class="unselected optional-item" src="images/scents/Potato.png"></td>
@@ -241,7 +263,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="east-chilly" data-name="Carrot" class="unselected optional-item" src="images/scents/Carrot.png"></td>
                             <td><img data-area="east-chilly" data-name="Melon" class="unselected optional-item" src="images/scents/Melon.png"></td>
                             <td><img data-area="east-chilly" data-name="Peach" class="unselected optional-item" src="images/scents/Peach.png"></td>
@@ -265,7 +287,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="dry-valley" data-name="Blueberry" class="unselected optional-item" src="images/scents/Blueberry.png"></td>
                             <td><img data-area="dry-valley" data-name="Papaya" class="unselected optional-item" src="images/scents/Papaya.png"></td>
                             <td><img data-area="dry-valley" data-name="Pomegranate" class="unselected optional-item" src="images/scents/Pomegranate.png"></td>
@@ -287,7 +309,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="rune-canyon" data-name="Blueberry" class="unselected optional-item" src="images/scents/Blueberry.png"></td>
                             <td><img data-area="rune-canyon" data-name="Carrot" class="unselected optional-item" src="images/scents/Carrot.png"></td>
                             <td><img data-area="rune-canyon" data-name="Chestnut" class="unselected optional-item" src="images/scents/Chestnut.png"></td>
@@ -312,7 +334,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="rune-caverns" data-name="Apple Pear" class="unselected optional-item" src="images/scents/ApplePear.png"></td>
                             <td><img data-area="rune-caverns" data-name="Lemon" class="unselected optional-item" src="images/scents/Lemon.png"></td>
                             <td><img data-area="rune-caverns" data-name="Star Fruit" class="unselected optional-item" src="images/scents/StarFruit.png"></td>
@@ -334,7 +356,7 @@
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="basic-scents">
                             <td><img data-area="kunka" data-name="Apricot" class="unselected optional-item" src="images/scents/Apricot.png"></td>
                             <td><img data-area="kunka" data-name="Litchee" class="unselected optional-item" src="images/scents/Litchee.png"></td>
                             <td><img data-area="kunka" data-name="Mangosteen" class="unselected optional-item" src="images/scents/Mangosteen.png"></td>

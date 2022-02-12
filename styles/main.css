@@ -55,7 +55,7 @@ h2 {
 .section {
     background-color: rgba(0,0,0,0.25);
     width: 36em;
-    margin: 0px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
     padding: 0px 5px 5px 5px;
     border-radius: 10px;
 }
@@ -183,6 +183,10 @@ a:hover {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+#section-visibility {
+    margin: 5px 5px 5px 5px;
+}
+
 #options-menu {
     background-color: darkred;
     color: white;
@@ -234,6 +238,14 @@ td.option {
     top: 1px;
     left: 1px;
     transition: all 0.3s ease;
+}
+
+div.label {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: white;
+    -webkit-text-stroke: 1px black;   
 }
 
 .checkbox-slider {
