@@ -125,6 +125,12 @@ $(document).ready(function(){
         localStorage.setItem("insect-visible", isChecked);
     });
 
+    $("#tooltips-enabled").click(function() {
+        var isChecked = $(this).is(':checked');
+        $(".tooltiptext").toggle(isChecked);
+        localStorage.setItem("tooltips-enabled", isChecked);
+    });
+
     $("#background-color").on("input", function() {
         var color = $(this).val();
         $("body, html").css("background-color", color);
@@ -151,6 +157,11 @@ $(document).ready(function(){
     var insect_scents_visible = localStorageGetWithDefault("insect-visible", true) == "true";
     if (!insect_scents_visible) {
         $("#insect-visible").click();
+    }
+
+    var tooltips_enabled = localStorageGetWithDefault("tooltips-enabled", false) == "true";
+    if (!tooltips_enabled) {
+        $("#tooltips-enabled").click();
     }
 
     var bg_color = localStorageGetWithDefault("background-color", "#24759e");
