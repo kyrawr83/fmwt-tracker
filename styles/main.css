@@ -118,6 +118,7 @@ a:hover {
     z-index: 1;
     top: 125%;
     left: 50%;
+    margin-top: -10px;
     margin-left: -105px;
 
     opacity: 0;
