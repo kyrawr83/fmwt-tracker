@@ -137,6 +137,13 @@ $(document).ready(function(){
         localStorage.setItem("insect-visible", isChecked);
     });
 
+    $("#show-maps").click(function() {
+        var isChecked = $(this).is(':checked');
+        $("#map-selector").toggle(isChecked);
+        $("#maps").toggle(isChecked);
+        localStorage.setItem("show-maps", isChecked);
+    });
+
     $("#tooltips-enabled").click(function() {
         var isChecked = $(this).is(':checked');
         $(".tooltiptext").toggle(isChecked);
@@ -156,22 +163,27 @@ $(document).ready(function(){
     });
 
     // local storage settings
-    var basic_scents_visible = localStorageGetWithDefault("basics-visible", true) == "true";
+    var show_maps = localStorageGetWithDefault("show-maps", "true") == "true";
+    if (!show_maps) {
+        $("#show-maps").click();
+    }
+
+    var basic_scents_visible = localStorageGetWithDefault("basics-visible", "true") == "true";
     if (!basic_scents_visible) {
         $("#basics-visible").click();
     }
 
-    var fish_scents_visible = localStorageGetWithDefault("fish-visible", true) == "true";
+    var fish_scents_visible = localStorageGetWithDefault("fish-visible", "true") == "true";
     if (!fish_scents_visible) {
         $("#fish-visible").click();
     }
 
-    var insect_scents_visible = localStorageGetWithDefault("insect-visible", true) == "true";
+    var insect_scents_visible = localStorageGetWithDefault("insect-visible", "true") == "true";
     if (!insect_scents_visible) {
         $("#insect-visible").click();
     }
 
-    var tooltips_enabled = localStorageGetWithDefault("tooltips-enabled", false) == "true";
+    var tooltips_enabled = localStorageGetWithDefault("tooltips-enabled", "false") == "true";
     if (!tooltips_enabled) {
         $("#tooltips-enabled").click();
     }
