@@ -92,6 +92,12 @@ $(document).ready(function(){
         $('#total-completion h2').text(`${Math.trunc(getAcquiredScentCount() / getTotalScentCount() * 1000) / 10}%`);
     });
 
+    // map selector
+    $("button").unbind("click").click(function() {
+        $("button.selected").toggleClass("selected");
+        $(this).toggleClass("selected");
+    });
+
     // options menu
     $(document).click(function(e) {
         // if the option menu is open, and the click is outside the options menu, close it
