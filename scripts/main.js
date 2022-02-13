@@ -82,6 +82,12 @@ $(document).ready(function(){
     });
 
     // bind individual item trackers
+    $('.section-toggle').unbind("click").click(function() {
+        var section = $(this).attr('data-for-section');
+        $(`#${section} .flex-row`).toggle();
+        $(this).toggleClass("section-toggle-closed");
+    });
+
     $('.optional-item').unbind("click").click(function() {
         if ($(this).hasClass("unselected")) {
             $(`img[data-name="${$(this).attr("data-name")}"]`).removeClass("unselected");

@@ -250,6 +250,25 @@ a:hover {
     transform: translate(608px);
 }
 
+td.section-toggle {
+    cursor: pointer;
+    width: 15px;
+    min-width: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    -webkit-text-stroke: black 1px;
+
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+td.section-toggle.section-toggle-closed {
+    -webkit-transform: rotate(-0deg);
+    transform: rotate(-0deg);
+}
+
 td.option-name {
     text-align: left;
     padding-left: 10px;
