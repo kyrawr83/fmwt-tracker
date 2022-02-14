@@ -95,6 +95,11 @@ $(document).ready(function(){
             $(`img[data-name="${$(this).attr("data-name")}"]`).addClass("unselected");
         }
 
+        var mapItem = $(this).attr("data-map-item");
+        if (mapItem) {
+            $(`.map[data-map-item="${mapItem}"]`).toggle($(this).hasClass("unselected"));
+        }
+
         $('#total-completion h2').text(`${Math.trunc(getAcquiredScentCount() / getTotalScentCount() * 1000) / 10}%`);
     });
 
@@ -102,6 +107,9 @@ $(document).ready(function(){
     $("button").unbind("click").click(function() {
         $("button.selected").toggleClass("selected");
         $(this).toggleClass("selected");
+
+        $(`div[data-map-set]`).toggle(false);
+        $(`div[data-map-set="${$(this).attr("data-map")}"]`).toggle(true);
     });
 
     // options menu
