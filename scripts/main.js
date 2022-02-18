@@ -88,6 +88,10 @@ $(document).ready(function(){
         $(this).toggleClass("section-toggle-closed");
     });
 
+    $('.section-header[data-for-section]').unbind("click").click(function() {
+        $(`.section-toggle[data-for-section="${$(this).attr('data-for-section')}"]`).click();
+    });
+
     $('.optional-item').unbind("click").click(function() {
         if ($(this).hasClass("unselected")) {
             $(`img[data-name="${$(this).attr("data-name")}"]`).removeClass("unselected");

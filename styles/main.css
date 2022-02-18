@@ -282,6 +282,10 @@ td.section-toggle.section-toggle-closed {
     transform: rotate(90deg);
 }
 
+h1.section-header {
+    cursor: pointer;
+}
+
 td.option-name {
     text-align: left;
     padding-left: 10px;
