@@ -1,2 +1,3 @@
-# di100-tracker
-Web based tracker for The DOG Island 100%
+# fmwt-tracker
+Web based tracker for Fishing Master World Tour.
+Branched from Phantom's THE DOG Island tracker.
